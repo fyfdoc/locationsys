@@ -167,6 +167,13 @@ public class ModeFragment extends Fragment {
         btnConfirm.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+
+                // ==================Test=========
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+                // ==================Test=========
+
+/*
                 // 制式
                 strTddFdd = tddFddSp.getSelectedItem().toString();
                 // 运营商
@@ -212,6 +219,8 @@ public class ModeFragment extends Fragment {
 
                 // 设置参数下发
                 setMsParas();
+
+                */
             }
 
 

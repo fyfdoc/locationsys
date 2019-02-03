@@ -304,6 +304,13 @@ public class LoginFragment extends Fragment {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // ===========Test===========
+                // 进入制式页面 TODO跳过基站连接
+                Intent intent = new Intent(getActivity(), ModeActivity.class);
+                startActivity(intent);
+                // ===========Test===========
+
+                /*
                 //获取用户输入的登录信息
                 username = userNameEt.getText().toString();
                 password = passwordEt.getText().toString();
@@ -380,6 +387,7 @@ public class LoginFragment extends Fragment {
 
                 // 与主站建立连接
                 connMasterStation();
+*/
             }
         });
 
