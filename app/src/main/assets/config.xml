@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <!--目标IP地址-->
+    <DestIp>192.168.42.10</DestIp>
+    <!--目标端口-->
+    <DestPort>30000</DestPort>
+    <!--本地端口-->
+    <LocalPort>5000</LocalPort>
+
+</Config>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dtm.locationsys.fragment.StationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/cellTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_h"
+        android:background="@color/divider_line"
+        android:layout_marginBottom="5dp"
+        />
+    <!-- 预锁定按钮 -->
+    <Button
+        android:id="@+id/btn_pre_lock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_btn_h"
+        android:layout_marginRight="@dimen/page_margin_left"
+        android:layout_marginLeft="@dimen/page_margin_right"
+        android:background="@color/btn_bg_color"
+        android:textColor="@color/btn_font_color"
+        android:text="@string/btn_pre_lock"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.dtm.locationsys"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <!-- 页面的头 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/app_title_bg_color"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/app_title_font_color"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="KKK"/>
+
+            <TextView
+                android:layout_width="@dimen/header_tr_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_title"
+                android:textColor="@color/app_title_font_color"
+                android:textSize="@dimen/header_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="@string/app_version"
+                android:textColor="@color/app_title_font_color"
+                android:textSize="@dimen/header_font_size" />
+
+        </LinearLayout>
+
+        <!-- 页面主体 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+        <!-- 页面底部菜单 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal">
+            <!--主界面-->
+            <com.dtm.locationsys.cust.ChangeColorIconWithText
+                android:id="@+id/id_menu_main_page"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                hyman:color="@color/menu_selected_color"
+                hyman:icon="@drawable/ic_menu_home"
+                hyman:text="@string/tab_contact"
+                hyman:text_size="12sp" />
+
+            <!--基站-->
+            <com.dtm.locationsys.cust.ChangeColorIconWithText
+                android:id="@+id/id_menu_station"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                hyman:color="@color/menu_selected_color"
+                hyman:icon="@drawable/ic_media_route_disabled_holo_light"
+                hyman:text="@string/tab_station"
+                hyman:text_size="12sp" />
+
+            <!--用户-->
+            <com.dtm.locationsys.cust.ChangeColorIconWithText
+                android:id="@+id/id_menu_user"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                hyman:color="@color/menu_selected_color"
+                hyman:icon="@drawable/ic_menu_friendslist"
+                hyman:text="@string/tab_user"
+                hyman:text_size="12sp" />
+
+
+            <!--协同-->
+            <com.dtm.locationsys.cust.ChangeColorIconWithText
+                android:id="@+id/id_menu_team"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                hyman:color="@color/menu_selected_color"
+                hyman:icon="@drawable/ic_menu_allfriends"
+                hyman:text="@string/tab_team"
+                hyman:text_size="12sp" />
+
+            <!--设置-->
+            <com.dtm.locationsys.cust.ChangeColorIconWithText
+                android:id="@+id/id_menu_config"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                hyman:color="@color/menu_selected_color"
+                hyman:icon="@drawable/perm_group_system_tools"
+                hyman:text="@string/tab_config"
+                hyman:text_size="12sp" />
+
+        </LinearLayout>
+
+</LinearLayout>

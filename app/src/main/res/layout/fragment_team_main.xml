@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dtm.locationsys.fragment.TeamMainFragment"
+    android:orientation="vertical">
+
+    <!-- 协同二级Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header2_h"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_title_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/team_header_name"
+            android:textColor="@color/header_2"
+            android:textSize="@dimen/header2_font_size"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn_team_add"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_cross"/>
+
+    </LinearLayout>
+    <!-- 协同内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <!--图形-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/team_car"
+                    />
+
+            <!--时间等内容-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:background="@drawable/under_border"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:text="17:45:09"
+                    android:background="@color/team_time_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JK686639 ALL"/>
+            </LinearLayout>
+
+            <!--方位信息，采用相对布局-->
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/under_border"
+                >
+
+                <!-- 中心节点，由于定位，是隐藏的 -->
+                <TextView
+                    android:id="@+id/view0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:text="0"/>
+                <!-- 上节点 -->
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_above="@+id/view0"
+                    android:layout_alignLeft="@+id/view0"
+                    android:paddingBottom="15dp"
+                    android:text="0"
+                    />
+                <!-- 下节点 -->
+                <TextView
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_below="@+id/view0"
+                    android:layout_alignLeft="@+id/view0"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    />
+                <!-- 左节点 -->
+                <TextView
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_toLeftOf="@+id/view0"
+                    android:layout_alignTop="@+id/view0"
+                    android:paddingRight="20dp"
+                    android:text="0"
+                    />
+                <!-- 右节点 -->
+                <TextView
+                    android:id="@+id/view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_toRightOf="@+id/view0"
+                    android:layout_alignTop="@+id/view0"
+                    android:paddingLeft="20dp"
+                    android:text="0"
+                    />
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_h"
+        android:background="@color/divider_line"
+        />
+
+
+</LinearLayout>

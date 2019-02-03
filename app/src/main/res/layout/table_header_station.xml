@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--Time-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_1"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_2"
+        android:layout_alignTop="@+id/list_1_2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <!--Band-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_2"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_toRightOf="@+id/list_1_1"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <!--EARFCN-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_3"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_2"
+        android:layout_alignTop="@+id/list_1_2"
+        android:layout_toRightOf="@+id/list_1_2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <!--PCI-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_4"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_3"
+        android:layout_alignTop="@+id/list_1_3"
+        android:layout_toRightOf="@+id/list_1_3"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <!--UL/DL-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_5"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_4"
+        android:layout_alignTop="@+id/list_1_4"
+        android:layout_toRightOf="@+id/list_1_4"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <!--MCC-MNC-TAC-ECI(十六进制)-->
+    <com.dtm.locationsys.cust.CustTableStationTextView
+        android:id="@+id/list_1_6"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_5"
+        android:layout_alignTop="@+id/list_1_5"
+        android:layout_toRightOf="@+id/list_1_5"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+</RelativeLayout>

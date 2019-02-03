@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">车载定位</string>
+    <string name="menu_mode">制式</string>
+    <string name="action_search">查找</string>
+    <string name="action_add">添加</string>
+    <string name="menu_group_chat">发起群聊</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_addfriend">添加朋友</string>
+    <string name="menu_scan">扫一扫</string>
+
+
+    <!-- 主菜单信息 -->
+    <string name="tab_contact">主界面</string>
+    <string name="tab_station">基站</string>
+    <string name="tab_user">用户</string>
+    <string name="tab_team">协同</string>
+    <string name="tab_config">设置</string>
+    <!-- 主菜单索引 -->
+    <string name="index_menu0">0</string>
+    <string name="index_menu1">1</string>
+    <string name="index_menu2">2</string>
+    <string name="index_menu3">3</string>
+    <string name="index_menu4">4</string>
+
+    <!-- 版本信息 -->
+    <string name="app_title">JK-720B</string>
+    <string name="app_version">V1.0.0</string>
+    <!-- 按钮 -->
+    <string name="btn_confirm">确认</string>
+    <string name="btn_freq_edit">频点编辑</string>
+    <string name="btn_pre_lock">预锁定开始</string>
+    <string name="btn_search">查询</string>
+    <string name="btn_set">设置</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_del">删除</string>
+    <string name="btn_read">读取</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_tts_test">语音测试</string>
+
+    <!-- 登录页面 -->
+    <string name="target_num">目标号码</string>
+    <string name="verification_code">验证码</string>
+    <string name="scramble_code">扰码</string>
+
+    <!-- 制式页面 -->
+    <string name="operator">运营商</string>
+    <string name="tdd_fdd">TDD/FDD</string>
+    <string name="work_mode">工作模式</string>
+    <string name="station_policy">基站解析策略</string>
+    <string name="frequency_point_select">频点选择</string>
+
+    <!-- 设置页面 -->
+    <string name="config_jingzhen">晶振</string>
+    <string name="config_user__mng_name">账号管理:</string>
+    <string name="config_user_name">账号</string>
+    <string name="config_password">密码</string>
+    <string name="config_password_edit">密码更改:</string>
+    <string name="config_password_old">原密码</string>
+    <string name="config_password_new">新密码</string>
+    <string name="config_cexiang_time">测向时长</string>
+    <string name="config_shangxing_control">上行增益调整</string>
+    <string name="config_read_log_data">读取LOG数据</string>
+
+    <!-- 协同页面 -->
+    <string name="team_header_name">协同组</string>
+    <!-- 参数配置页面 -->
+    <string name="freq_select">频点选择</string>
+    <string name="freq_auto">自动频点</string>
+    <string name="freq_add">添加频点</string>
+    <string name="band_name">BAND</string>
+    <string name="freq_point">频点</string>
+    <!--主界面-->
+    <string name="add_ctl_cell">添加守控小区</string>
+    <string name="add_tac">TAC</string>
+    <string name="add_cid">CID</string>
+    <string name="pub_net_send">公网发</string>
+    <string name="digital_send">数传发</string>
+    <string name="pub_net_recv">公网收</string>
+    <string name="digital_recv">数传收</string>
+    <string name="tmsi_name">TMSI</string>
+    <string name="ta_value">TA值</string>
+    <string name="fa_on">开</string>
+    <string name="fa_off">关</string>
+    <string name="lock_on">开</string>
+    <string name="lock_off">关</string>
+    <string name="front_antenna">前</string>
+    <string name="back_antenna">后</string>
+    <string name="left_antenna">左</string>
+    <string name="right_antenna">右</string>
+
+    <!--网络配置页面-->
+    <string name="dest_ip">目标地址</string>
+    <string name="dest_port">目标端口</string>
+    <string name="local_port">本地端口</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

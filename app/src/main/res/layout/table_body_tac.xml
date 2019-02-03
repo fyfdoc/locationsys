@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <!--发-->
+    <Switch
+        android:id="@+id/list_1_1"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_2"
+        android:layout_alignTop="@+id/list_1_2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:showText="true"
+        android:textOn="@string/fa_on"
+        android:textOff="@string/fa_off"/>
+    <!--TAC/CID/PCI-->
+    <com.dtm.locationsys.cust.CustTableTextView
+        android:id="@+id/list_1_2"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_toRightOf="@+id/list_1_1"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+    <!--CH/BAND-->
+    <com.dtm.locationsys.cust.CustTableTextView
+        android:id="@+id/list_1_3"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/table_h"
+        android:layout_alignBottom="@+id/list_1_2"
+        android:layout_alignTop="@+id/list_1_2"
+        android:layout_toRightOf="@+id/list_1_2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="13sp" />
+</RelativeLayout>

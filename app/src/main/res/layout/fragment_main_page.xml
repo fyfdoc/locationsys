@@ -1,0 +1,283 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.dtm.locationsys.fragment.MainPageFragment" >
+
+        <LinearLayout
+            android:id="@+id/cellTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!--添加守控小区-->
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:text="@string/add_ctl_cell" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            -->
+            <!--TAC-->
+        <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:text="@string/add_tac" />
+
+            <EditText
+                android:id="@+id/txt_tac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+                -->
+            <!--CID-->
+        <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_cid" />
+
+            <EditText
+                android:id="@+id/txt_cid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cell_confirm"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/page_margin_right"
+                android:layout_height="@dimen/small_btn_h"
+                android:background="@color/btn_small_bg_color"
+                android:textColor="@color/btn_small_font_color"
+                android:text="@string/btn_confirm" />
+        </LinearLayout>
+        -->
+        <!-- 分割线 -->
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+            -->
+        <!--公网收发-->
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pub_net_send" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/digital_send" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pub_net_recv" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/digital_recv" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_btn_h"
+                android:layout_marginRight="@dimen/page_margin_right"
+                android:layout_gravity="center_vertical"
+                android:background="@color/btn_small_bg_color"
+                android:textColor="@color/btn_small_font_color"
+                android:text="@string/btn_confirm" />
+
+        </LinearLayout>
+        -->
+        <!-- 分割线 -->
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+            -->
+        <!--TAC数据表-->
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/tacFragment"
+                android:name="com.dtm.locationsys.fragment.TacTableFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        -->
+        <!-- 分割线 -->
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--目标号码-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/target_num" />
+
+            <EditText
+                android:id="@+id/txt_target_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"/>
+            <!--TMSI-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tmsi_name" />
+
+            <EditText
+                android:id="@+id/txt_tmsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <!--TA值-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ta_value" />
+
+            <EditText
+                android:id="@+id/txt_ta_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <!--TMSI数据表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/tmsiFragment"
+                android:name="com.dtm.locationsys.fragment.TmsiTableFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+        <!--能量值-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--圆-->
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                >
+
+                <com.dtm.locationsys.cust.CircleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/energyChartFragment"
+                android:name="com.dtm.locationsys.fragment.EnergyChartFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_big_line_h"
+            android:background="@color/divider_line"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

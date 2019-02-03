@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dtm.locationsys.fragment.NetworkConfigFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:text="@string/dest_ip"/>
+        <EditText
+            android:id="@+id/txt_dest_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/login_margin_right"
+            android:layout_weight="1"
+            android:maxLength="15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:text="@string/dest_port"/>
+        <EditText
+            android:id="@+id/txt_dest_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/login_margin_right"
+            android:layout_weight="1"
+            android:maxLength="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:text="@string/local_port"/>
+        <EditText
+            android:id="@+id/txt_local_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/login_margin_right"
+            android:layout_weight="1"
+            android:maxLength="5"/>
+    </LinearLayout>
+    <!-- 扰码-->
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:layout_marginTop="5dp"
+            android:text="@string/scramble_code"/>
+        <EditText
+            android:id="@+id/txt_scramble_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/login_margin_right"
+            android:layout_weight="1"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+-->
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_btn_h"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_right"
+        android:layout_marginTop="30dp"
+        android:background="@color/btn_bg_color"
+        android:textColor="@color/btn_font_color"
+        android:text="@string/btn_save"/>
+
+
+
+</LinearLayout>

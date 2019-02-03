@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Table行高 -->
+    <dimen name="table_h">30dp</dimen>
+    <!--页面的左边距-->
+    <dimen name="page_margin_left">8dp</dimen>
+    <!--页面的右边距-->
+    <dimen name="page_margin_right">8dp</dimen>
+    <!--登录页面的左边距-->
+    <dimen name="login_margin_left">12dp</dimen>
+    <!--登录页面的右边距-->
+    <dimen name="login_margin_right">12dp</dimen>
+
+    <!-- 页面头 -->
+    <!-- 一级Header样式 -->
+    <dimen name="header_h">50dp</dimen>
+    <dimen name="header_font_size">16dp</dimen>
+    <dimen name="header_tr_w">80dp</dimen>
+    <!-- 二级Header样式 -->
+    <dimen name="header2_h">40dp</dimen>
+    <dimen name="header2_font_size">18dp</dimen>
+
+    <!-- 协作组 -->
+
+    <!-- 分割线 -->
+    <dimen name="divider_line_h">1dp</dimen>
+    <dimen name="divider_big_line_h">18dp</dimen>
+
+    <!--大按钮高度-->
+    <dimen name="big_btn_h">40dp</dimen>
+    <!--小按钮高度-->
+    <dimen name="small_btn_h">32dp</dimen>
+    <!--表格列间距离-->
+    <dimen name="table_col_padding">1dp</dimen>
+
+</resources>

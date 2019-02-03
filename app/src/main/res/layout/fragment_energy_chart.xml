@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.dtm.locationsys.fragment.EnergyChartFragment">
+
+    <!--柱状图-->
+    <LinearLayout
+        android:id="@+id/energy_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+
+</LinearLayout>
